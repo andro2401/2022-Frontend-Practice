@@ -1,3 +1,5 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap");
 /* Box sizing rules */
 *,
 *::before,
@@ -36,6 +38,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
 }
 
 /* A elements that don't have a class get default styles */
@@ -76,11 +80,83 @@ select {
   }
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
 a {
   text-decoration: none;
+  color: black;
+  padding: 0;
+  margin: 0;
 }
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+/*
+NAVIGATION & LOGO
+*/
+header {
+  padding-block: 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-span {
+  color: #CC041E;
+}
+
+.nav {
+  gap: 2em;
+}
+
+.nav .nav-link {
+  color: white;
+  text-transform: uppercase;
+}
+
+/*
+    STYLING
+*/
+.hero-img {
+  position: absolute;
+  top: 0;
+  right: -20%;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/hero-image.jpg);
+  background-position-x: 50%;
+  background-position-y: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,1 +1,47 @@
 @import "utilities";
+
+
+.container{
+    max-width: 1440px;
+    margin-inline: auto;
+}
+
+/*
+NAVIGATION & LOGO
+*/
+header{
+    padding-block: 2em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-span{
+    color: #CC041E;
+}
+
+.nav{
+    gap: 2em;
+
+   .nav-link{
+       color: white;
+       text-transform: uppercase;
+   }
+}
+
+/*
+    STYLING
+*/
+
+.hero-img{
+    position: absolute;
+    top: 0;
+    right: -20%;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/hero-image.jpg);
+    background-position-x: 50%;
+    background-position-y: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}

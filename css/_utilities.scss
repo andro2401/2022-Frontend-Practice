@@ -1,3 +1,6 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
+
 /* Box sizing rules */
 *,
 *::before,
@@ -35,6 +38,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
 }
 
 /* A elements that don't have a class get default styles */
@@ -73,10 +78,30 @@ select {
   }
 }
 
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
 a{
     text-decoration: none;
+    color: black;
+    padding: 0;
+    margin: 0;
 }
 
 ul{
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fw-300{
+    font-weight: 300;
+}
+.fw-700{
+    font-weight: 700;
 }
