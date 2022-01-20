@@ -1,32 +1,59 @@
 @import "utilities";
 
 
-.container{
-    max-width: 1440px;
-    margin-inline: auto;
-}
+
 
 /*
 NAVIGATION & LOGO
 */
 header{
-    padding-block: 2em;
+    padding: 1em;
     justify-content: space-between;
     align-items: center;
+
+    .menu-icon{
+        width: 3em;
+        cursor: pointer;
+    }
+
+    nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        background: white;
+        width: 50%;
+        z-index: 10;
+        transform: translateX(100%); //da ne vidimo ovu navigaciju dok ne kliknemo na nju
+        transition: transform .5s ease-in-out;//oznacava animaciju navigacije
+
+        ul{
+            margin-top: 8em;
+        }
+
+        a{
+            color: black;
+            text-transform: uppercase;
+            padding: .75em 2em;
+
+            &:hover{
+                background: rgb(233, 233, 233);
+            }
+        }
+
+        .close{
+            float: right;
+            width: 2.5em;
+            margin: 1em;
+        }
+    }
 }
 
 .logo-span{
     color: #CC041E;
 }
 
-.nav{
-    gap: 2em;
 
-   .nav-link{
-       color: white;
-       text-transform: uppercase;
-   }
-}
 
 /*
     STYLING
@@ -35,13 +62,59 @@ header{
 .hero-img{
     position: absolute;
     top: 0;
-    right: -20%;
+    left: 0;
+    background-image: url(../img/hero-image.jpg);
+    background-size: cover;
+    background-position-x: 20%;
     width: 100%;
     height: 100vh;
-    background-image: url(../img/hero-image.jpg);
-    background-position-x: 50%;
-    background-position-y: 70%;
-    background-repeat: no-repeat;
-    background-size: cover;
     z-index: -1;
+    overflow-x: hidden;
+}
+
+
+/*HERO SECTION*/
+.hero{
+    color: white;
+    padding: 1em;
+    height: 100vh;
+
+    &__headline{
+        font-size: 3rem;
+        line-height: 4rem;
+        margin-top: 2em;
+    }
+
+    &__paragraph{
+        margin-top: 2em;
+        
+    }
+
+    &__svg{
+        stroke: white;
+        position: absolute;
+        bottom: 2em;
+        width: 1rem;
+
+        path{
+            fill: white;
+        }
+    }
+}
+
+
+/*FEATURE SECTION*/
+.feature{
+    padding: 2em 1em;
+
+    &__text{
+        padding-bottom: .5em;
+    
+        &__title{
+            padding-bottom: .5em;
+            font-size: 1.2rem;
+        }
+    }
+
+
 }

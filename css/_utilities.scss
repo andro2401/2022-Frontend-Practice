@@ -39,7 +39,6 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: 'Raleway', sans-serif;
-  overflow: hidden;
 }
 
 /* A elements that don't have a class get default styles */
@@ -87,8 +86,9 @@ select {
 }
 
 a{
+    display: block;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 0;
     margin: 0;
 }
