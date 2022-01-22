@@ -105,3 +105,21 @@ ul{
 .fw-700{
     font-weight: 700;
 }
+
+
+@mixin media-md {
+  @media screen and (min-width: 680px) {
+    @content;
+  }
+}
+@mixin media-lg {
+  @media screen and (min-width: 920px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
