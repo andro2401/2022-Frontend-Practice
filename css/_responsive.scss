@@ -4,18 +4,13 @@
     }
 }
 
-@include media-lg{
-    
-    header{
-        .menu-icon{
-            display: none;
-        }
+@include media-xl{
+    .container{
+        width: 1200px;
+        margin: 0 auto;
+    }
 
-        nav{
-            transform: translateX(0);
-            position: unset;
-            width: auto;
-            height: auto;
-        }
+    .feature{
+        gap: 0;
     }
 }
