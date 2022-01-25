@@ -12,8 +12,8 @@ header{
     justify-content: space-between;
     align-items: center;
 
-    .menu-icon{
-        width: 3em;
+    .menu{
+        width: 2.5em;
         cursor: pointer;
     }
 
@@ -57,6 +57,10 @@ header{
 /*
     STYLING
 */
+
+.container{
+    padding: 1em 2em;
+}
 
 .hero-img{
     position: absolute;
@@ -122,12 +126,17 @@ header{
 
 }
 
+//napravimo klasu koju smo dodali u JavaScriptu za otvaranje menija
+.open-nav{
+    transform: translateX(0);
+}
+
 @media screen and (min-width: 920px) {
     header{
         align-items: center;
         justify-content: space-between;
 
-        .menu-icon{
+        .menu{
             display: none;
         }
 

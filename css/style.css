@@ -141,8 +141,8 @@ header {
           align-items: center;
 }
 
-header .menu-icon {
-  width: 3em;
+header .menu {
+  width: 2.5em;
   cursor: pointer;
 }
 
@@ -185,6 +185,10 @@ header nav .close {
 /*
     STYLING
 */
+.container {
+  padding: 1em 2em;
+}
+
 .hero-img {
   position: absolute;
   top: 0;
@@ -246,6 +250,11 @@ header nav .close {
   font-size: 1.2rem;
 }
 
+.open-nav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 @media screen and (min-width: 920px) {
   header {
     -webkit-box-align: center;
@@ -255,7 +264,7 @@ header nav .close {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  header .menu-icon {
+  header .menu {
     display: none;
   }
   header nav {
